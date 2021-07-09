@@ -2,6 +2,19 @@
 	margin: 0;
 	padding: 0;
 	box-sizing: border-box;
+	position: relative;
+	font-family: Arial;
+}
+#main{
+	width: 960px;
+	height: 1100px;
+	background: red;
+	margin: auto;
+}
+header {
+	width: 960px;
+	height: 305px;
+	background: black;
 }
 #logo{
 	width: 340px;
@@ -10,23 +23,67 @@
 	padding: 20px;
 	border: none;
 	border-radius: 10px;
+	position: absolute;
+	top: 0;
+	left: 10px;
 }
-img{
-	width: 305px;
-	height: 50px;
-}
-h1{
-	font-size: 38px;
-	font-family: Arial;
+#title > h1{
+	display: inline;
 	color: white;
-	/*background: gray;*/
+	font-size: 30px;
+	display: absolute;
+	top: 125px;
+	left: 460px;
+	/*background: grey;*/
+}
+#nav_menu{
+	position: absolute;
+	top: 0;
+	left: 730px;
+}
+#title > img{
+	width: 960px;
+	position: fixed;
+	bottom: 0;
+}
+#nav_menu ul{
+	width: 230px;
+	height: 270px;
+	background: #db6516;
+	float: right;
+	list-style: none;
+}	
+#nav_menu > ul > li{
+	width: 230px;
+	height: 40px;
+	font-size: 18px;	
+	border-top: solid 1px #95450f;
 	text-align: center;
-	padding: 0;
+	line-height: 40px;
 }
-a{
-	text-decoration: none;
-}
-span{
-	text-transform: uppercase;
+
+#nav_menu li a{
 	color: white;
 }
+#nav1{
+	background: #95450f;
+}
+	#logo img{
+		width: 305px;
+		height: 50px;
+	}
+	#logo > h1{
+		font-size: 38px;
+		font-family: Arial;
+		color: white;
+		/*background: gray;*/
+		text-align: center;
+		padding: 0;
+	}
+	a{
+		text-decoration: none;
+	}
+	#logo span{
+		text-transform: uppercase;
+		color: white;
+	}
